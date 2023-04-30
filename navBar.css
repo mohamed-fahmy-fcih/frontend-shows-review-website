@@ -1,0 +1,582 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Sen', sans-serif;
+}
+
+/* colorList = [ 'rgb(51, 51, 51)',
+              'rgb(26, 26, 26)',
+              'rgb(237,78,73)',
+              'rgb(242, 242, 242)',
+              'rgb(220, 220, 220)',
+              'rgb(12, 12, 12)',
+              'rgb(200, 200, 200)'] */
+:root {
+  --normalColor: rgb(237, 78, 73);
+}
+
+.lightMode {
+  --textColor: rgb(26, 26, 26);
+  --back1: rgb(242, 242, 242);
+  --back2: rgb(220, 220, 220);
+  --webScrollColor: rgb(200, 200, 200);
+}
+
+.darkMode {
+  --textColor: rgb(242, 242, 242);
+  --back1: rgb(51, 51, 51);
+  --back2: rgb(26, 26, 26);
+  --webScrollColor: rgb(12, 12, 12);
+}
+
+body {
+  transition: .5s;
+  background-color: var(--back2);
+}
+
+/* NAV BAR */
+nav {
+  position: fixed;
+  width: 100%;
+  color: var(--TextColor);
+  background-color: var(--back1);
+  z-index: 4;
+  transition: .5s;
+  filter: drop-shadow(0 0 5px black);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--TextColor);
+  transition: .3s;
+}
+
+nav .cont {
+  display: grid;
+  padding: 15px;
+  align-items: center;
+  grid-template-columns: 5% .5fr 2fr 1fr 5%
+}
+
+nav .logo {
+  grid-column-start: 2;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--textColor);
+}
+
+/* SVG DESGIN */
+nav .logo:hover a svg, nav .logo:hover a {
+  fill: var(--normalColor);
+  color: var(--normalColor);
+}
+
+nav .logo .svg svg {
+  fill: var(--textColor);
+  width: 50px;
+  height: auto;
+  padding-right: 10px;
+  transition: .2s;
+}
+
+nav span {
+  color: var(--normalColor);
+}
+
+nav .lists ul {
+  display: flex;
+}
+
+/*NESTED LIST*/
+nav .list .selectList {
+  display: flex;
+  align-items: center;
+}
+
+nav .lists li a:hover, nav .lists li a:hover~.icon {
+  color: var(--normalColor);
+}
+
+nav .list:hover ul {
+  display: block;
+}
+
+nav .list ul {
+  display: none;
+  position: absolute;
+  padding-top: 40px;
+  transition: .2s;
+  cursor: default;
+  background-color: var(--back1);
+}
+
+nav .list .selectList .icon {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: .2s;
+  color: var(--textColor);
+}
+
+nav .lists li {
+  list-style: none;
+  margin: 0 15px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+nav .lists li a {
+  text-decoration: none;
+  color: var(--textColor);
+  transition: .2s;
+  cursor: pointer;
+}
+
+/*SEARCH BAR*/
+nav .search {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+}
+
+nav .search input {
+  width: 200px;
+  padding: 8px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  transition: .3s;
+  background-color: var(--textColor);
+  color: var(--back1);
+}
+
+#searchPc:focus {
+  padding: 8px 16px;
+}
+
+#searchPc:focus~.iconSearch {
+  color: var(--normalColor);
+}
+
+nav .search .searchIn {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+nav .search .iconSearch {
+  transform: translate(-130%, 13%);
+  position: absolute;
+  color: var(--back1);
+  font-size: 25px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+nav .search .icon {
+  font-size: 25px;
+  margin-left: 15px;
+  transition: .3s;
+  cursor: pointer;
+  color: var(--textColor);
+}
+
+nav .search .icon:hover {
+  transform: scale(1.1);
+  color: var(--normalColor);
+}
+
+.searchWarp {
+  display: none;
+  overflow: hidden;
+  overflow-y: visible;
+  max-height: 485px;
+  position: absolute;
+  width: 250px;
+  margin-top: 25px;
+}
+
+.searchWarp li {
+  list-style: none;
+  padding: 5px;
+  background-color: var(--back1);
+  text-align: center;
+  transition: .2s;
+  display: flex;
+  align-items: center;
+}
+
+.searchWarp li p {
+  padding-left: 30px;
+}
+
+.searchWarp li:hover {
+  background-color: var(--normalColor);
+}
+
+.searchWarp a {
+  text-decoration: none;
+  color: var(--textColor);
+  transition: .2s;
+  width: 100%;
+  overflow: hidden;
+}
+
+.searchWarp img {
+  width: 75px;
+}
+
+/*SETTINGS SHOW*/
+.sittings {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: .3s;
+  opacity: 0;
+  z-index: -1;
+}
+
+.sittings h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.sittings .cont {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sittings .mode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sittings .mode .switch {
+  position: relative;
+  width: 50px;
+  height: 25px;
+  border-radius: 50px;
+  background-color: var(--normalColor);
+  border: 2px var(--back1) solid;
+  transition: .5s;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.sittings .mode .switch:hover {
+  background-color: black;
+}
+
+.sittings .mode .switch .circle {
+  position: absolute;
+  left: 0;
+  transform: translateX(-1px);
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
+  background-color: var(--back1);
+  transition: .5s;
+}
+
+.searchMob {
+  display: none;
+}
+
+/* RESPONSIVE MOBILE STYLE */
+@media only screen and (max-width: 1060px) {
+
+  /* HIDE PC VERSION */
+  .nav {
+    display: none;
+  }
+
+  .sittings {
+    display: none;
+  }
+
+  /* MOBILE NAV BAR */
+  .mobile {
+    display: block;
+    position: fixed;
+    width: 100%;
+    color: var(--textColor);
+    z-index: 4;
+  }
+
+  .mobile .cont {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1% 1fr 1fr 1%
+  }
+
+  .mobile .cont .logo {
+    grid-column-start: 2;
+    font-size: 15px;
+  }
+
+  .mobile .cont .logo span {
+    color: var(--normalColor);
+  }
+
+  .mobile .logo:hover a svg, nav .logo:hover a {
+    fill: var(--normalColor);
+    color: var(--normalColor);
+  }
+
+  .mobile .logo .svg svg {
+    fill: var(--textColor);
+    width: 40px;
+    height: auto;
+    padding-right: 10px;
+    transition: .2s;
+  }
+
+  .mobile .logo .svgCont {
+    fill: var(--normalColor);
+  }
+
+  .mobile .logo:hover {
+    color: var(--normalColor);
+  }
+
+  .right-nav-mob{
+    grid-column-start: 3;
+    grid-row-start: 1;
+    justify-self: flex-end;
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+  }
+
+  /*RESPONSIVE SHOW SEARCH LIST*/
+  #mobSearchUl {
+    top: 35px;
+    left: 0px;
+  }
+
+  /* HAMBURGER DESGIN*/
+  .mobile .hamb {
+  }
+
+  .mobile .hamb div {
+    width: 30px;
+    height: 5px;
+    margin: 5px;
+    background-color: var(--textColor);
+  }
+
+  .mobile .iconLink {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    justify-self: flex-end;
+    font-size: 20px;
+  }
+
+  .searchWarp {
+    margin-top: 10px;
+    margin-left: -70px;
+  }
+
+  /*SHOW MENU*/
+  .mobileShow {
+    position: fixed;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 3;
+    transition: .5s;
+    left: 100%;
+  }
+
+  .mobileShow ul {
+    position: absolute;
+    transform: translateY(30%);
+    height: 100%;
+    width: 100%;
+    list-style: none;
+  }
+
+  .mobileShow li {
+    margin: 1%;
+    font-size: 30px;
+    color: white;
+    border-top: 2px white solid;
+    border-bottom: 2px white solid;
+  }
+
+  .mobileShow li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .mobileShow li a:hover {
+    color: var(--normalColor);
+  }
+
+  .mobileShow .switcher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobileShow .switch {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    border-radius: 50px;
+    background-color: var(--normalColor);
+    border: 2px var(--back1) solid;
+    transition: .5s;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .mobileShow .switch:hover {
+    background-color: black;
+  }
+
+  .mobileShow .switch .circle {
+    position: absolute;
+    left: 0;
+    transform: translateX(-1px);
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+    background-color: var(--back1);
+    transition: .5s;
+  }
+
+  /* SEARCH IN MOB VER IPAD*/
+  .searchMob {
+    display: block;
+    padding-top: 90px;
+    width: 100%;
+  }
+
+  .searchMob .searchMobDiv {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .searchMob .searchBarMob {
+    display: flex;
+    justify-self: center;
+    width: 100%;
+    padding: 10px 1px;
+    color: var(--back1);
+    background-color: var(--textColor);
+    border: none;
+    transition: .5s;
+  }
+
+  .searchMob .icon {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    transition: .5s;
+  }
+
+  .searchMob .searchBarMob:focus~.icon {
+    color: var(--normalColor);
+  }
+
+  /* SEARCH SHOW */
+  .searchMob .searchWarpMob {
+    display: none;
+    overflow: hidden;
+    overflow-y: visible;
+    max-height: 300px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .searchMob .searchWarpMob li {
+    list-style: none;
+    padding: 5px;
+    background-color: var(--back1);
+    text-align: center;
+    transition: .2s;
+    display: flex;
+    align-items: center;
+  }
+
+  .searchMob .searchWarpMob li p {
+    padding-left: 30px;
+  }
+
+  .searchMob .searchWarpMob li:hover {
+    background-color: var(--normalColor);
+  }
+
+  .searchMob .searchWarpMob a {
+    text-decoration: none;
+    color: var(--textColor);
+    transition: .2s;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .searchMob .searchWarpMob img {
+    width: 75px;
+  }
+
+  .mobile .icon {
+    font-size: 25px;
+    transition: .3s;
+    margin-left: 13px;
+    cursor: pointer;
+    color: var(--textColor);
+  }
+
+  .mobile .icon:hover {
+    transform: scale(1.1);
+    color: var(--normalColor);
+  }
+}
+
+/* MORE RESPONSIVE */
+@media only screen and (min-width: 1060px) {
+  .mobile {
+    display: none;
+  }
+
+  .mobileShow {
+    display: none;
+  }
+}
+
+/* MORE RESPONSIVE */
+@media only screen and (max-width: 425px) {
+  .mobile .cont .logo {
+    font-size: 10px;
+  }
+
+  .searchMob {
+    padding-top: 80px;
+  }
+
+  .mobile .hamb div {
+    width: 30px;
+    height: 5px;
+    margin: 3px;
+  }
+
+  .mobileShow ul li {
+    font-size: 7vw;
+  }
+
+  .mobile .logo .svg svg {
+    width: 30px;
+  }
+}

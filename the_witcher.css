@@ -1,0 +1,290 @@
+body
+{
+	background-size :cover;
+	background-attachment :fixed;
+	background-image:url(wallpapersden.com_netflix-the-witcher-2019_2048x1152.jpg);
+}
+#searchbtn
+{
+	position: fixed;
+	right: 45px;
+    bottom: 39%;
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	background: #921c27;
+	box-shadow:0 0 10px rgb(0,0,0,0.25);
+	color: white;
+	outline:none;
+	cursor:pointer;
+	border:none;
+}
+#searchbtn:hover {
+  background-color: Red;
+  color :white;
+}
+#scrolltop
+{
+	position: fixed;
+	right: 45px;
+    bottom: 158px;
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	background: #921c27;
+	box-shadow:0 0 10px rgb(0,0,0,0.25);
+	color: white;
+	outline:none;
+	cursor:pointer;
+	border:none;
+}
+#scrolltop:hover {
+  background-color: Red;
+  color :white;
+}
+.info
+{
+    position: absolute;
+    left: 400px;
+        top: 603px;
+    color: white;
+    font-size: 39px;
+}
+.maininfo
+{
+	position: relative;
+    left: 175px;
+    top: 10px;
+    height: 850px;
+    width: 1150px;
+    border: 1px solid red;
+    background-color: rgb(0,0,0,0.85);
+}
+.main_name
+{
+	position: absolute;
+    font-size: 50px;
+    color: red;
+    left: 527px;
+    top: 90px;
+    text-align: center;
+	text-decoration: underline;
+	
+}
+
+.cover 
+{
+	position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 359px;
+    top: 169px;
+}
+.storytxt1
+{
+	position: absolute;
+    left: 22px;
+    top: 108px;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    font-size: 22px;
+}
+.details
+{
+	position: relative; 
+	left:175px;
+	top:40px;
+	height: 490px;
+	width:1150px;
+	border:1px solid red;
+	background-color:rgb(0,0,0,0.85);
+}
+.ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.ul li {
+  float: left;
+}
+
+.ul li button {
+  display: block;
+    color: black;
+    text-align: center;
+    padding: 18px 55px;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+.ul li button:hover {
+  background-color: Red;
+  color :white;
+}
+.menu
+{
+	position: absolute;
+}
+.buttons
+{
+	    color: white;
+    position: absolute;
+    top: 164px;
+    padding: 20px;
+    left: 30px;
+    margin: 20px;
+	
+}
+.link1:hover  {
+  background-color: rgb(237, 78, 73);
+  color: white;
+  border: 2px white solid;
+}
+.link2:hover  {
+  background-color: rgb(237, 78, 73);
+  color: white;
+  border: 2px white solid;
+}
+.link3:hover  {
+  background-color: rgb(237, 78, 73);
+  color: white;
+  border: 2px white solid;
+}
+.link4:hover  {
+  background-color: rgb(237, 78, 73);
+  color: white;
+  border: 2px white solid;
+}
+.link1
+{
+	position: absolute;
+    top: 50px;
+    left: 600px;
+	color: white;
+    text-align: center;
+    padding: 18px 85px;
+    text-decoration: none;
+    font-size: 50px;
+    border: 1px solid red;
+    border-radius: 8px;
+}
+.link2
+{
+	position: absolute;
+    top: 200px;
+    left: 74px;
+	color: white;
+    text-align: center;
+    padding: 18px 85px;
+    text-decoration: none;
+    font-size: 50px;
+    border: 1px solid red;
+    border-radius: 8px;
+}
+.link3
+{
+	position: absolute;
+    top: 200px;
+    left: 607px;
+	color: white;
+    text-align: center;
+    padding: 18px 85px;
+    text-decoration: none;
+    font-size: 50px;
+    border: 1px solid red;
+    border-radius: 8px;
+}
+
+.link4
+{
+	position: absolute;
+    top: 50px;
+    left: 50px;
+	color: white;
+    text-align: center;
+    padding: 18px 85px;
+    text-decoration: none;
+    font-size: 50px;
+    border: 1px solid red;
+    border-radius: 8px;
+}
+.watch
+{
+	position: absolute;
+    top: 102px;
+    left: 367px;
+    color: red;
+    font-size: 43px;
+}
+.photos1
+{
+	position: absolute;
+    top: 102px;
+    left: 367px;
+}
+.video
+{
+	position: absolute;
+    top: 129px;
+    left: 97px;
+    height: 650px;
+    width: 1000px;
+}
+.video iframe {
+  width: 100%;
+  height: 100%;
+}
+.castcard {
+  width: 400px;
+  background-color: white;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 40px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  border:1px solid red;
+	background-color:rgb(0,0,0,0.85);
+    color:red;
+    font-size:30px;
+	position: absolute;
+	
+	
+
+}
+.card1
+{
+position: absolute;
+    left: 125px;
+    top: 150px;
+}
+.card2
+{
+    position: absolute;
+    left: 604px;
+    top: 150px;
+}
+.card3
+{
+    position: absolute;
+    left: 604px;
+    top: 701px;
+}
+.card4
+{
+position: absolute;
+    left: 125px;
+    top: 900px;
+}
+.card5
+{
+    position: absolute;
+    left: 605px;
+    top: 1250px;
+}
+
+.castinfo {
+  text-align: center;
+  padding: 10px 20px;
+    border-radius: 50%;
+}

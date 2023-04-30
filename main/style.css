@@ -1,0 +1,294 @@
+body
+{
+	background-size :cover;
+	background-attachment :fixed;
+}
+#searchbtn
+{
+	position: fixed;
+	right: 45px;
+    bottom: 39%;
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	background: #921c27;
+	box-shadow:0 0 10px rgb(0,0,0,0.25);
+	color: white;
+	outline:none;
+	cursor:pointer;
+	border:none;
+}
+
+#searchbtn:hover {
+  background-color: Red;
+  color :white;
+}
+.maininfo
+{
+position: relative;
+    left: 65px;
+    top: 48px;
+    height: 2700px;
+    width: 1392px;
+    margin-top: 66px;
+    border: 1px solid red;
+    border-radius: 8px;
+}
+.searchsen
+{
+    position: absolute;
+    top: 0px;
+    right: 27%;
+    color: white;
+    font-size: 53px;
+	
+}
+.seriesname
+{
+    position: absolute;
+    top: 77%;
+    right: 23%;
+}
+#myInput {
+	background-image: url(search.jpg);
+    background-position: -12px 5px;
+    background-repeat: no-repeat;
+    background-size: 65px;
+    width: 39%;
+    position: absolute;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 2px solid #ec0000;
+    border-radius: 13px;
+    margin-bottom: 12px;
+    top: 169px;
+    right: 292px;
+}
+.all
+{
+    position: absolute;
+    width: 798px;
+    height: 27%;
+    top: 52%;
+    right: 17%;
+	
+}
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+#myUL .li  .a{
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+   float: left;
+   padding: 15px;
+   margin: 25px;
+       border: 2px solid red;
+    border-radius: 8px;
+	    text-align: center;
+}
+
+#myUL .li a:hover {
+  background-color: rgb(237, 78, 73);
+  color: white;
+  border: 2px white solid;
+}
+
+.imgs
+{
+    position: absolute;
+    width: 700px;
+    height: 400px;
+    top: 20px;
+    right: 467px;
+}
+.slider
+{
+position: relative;
+    /* width: 431px; */
+    top: 7%;
+    right: -79%;
+    margin: 1%;
+    padding: 1%;
+    width: 30%;
+}
+.buttons
+{
+    position: absolute;
+    top: 430px;
+    right: 650px;
+    width: 100px;
+}
+.btn1
+{
+border: 1px solid red;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+        right: 201px;
+	top:10px;
+	cursor: pointer;
+
+}
+.ii
+{
+	width:1%;
+}
+.btn2
+{
+	border: 1px solid red;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+	    position: absolute;
+    right: 158px;
+	top:10px;
+	cursor: pointer;
+}
+.btn3
+{
+	border: 1px solid red;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+	    position: absolute;
+    right: 115px;
+	top:10px;
+	cursor: pointer;
+}
+/*.btn4
+{
+	border: 1px solid red;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+	    position: absolute;
+    right: 71px;
+	top:10px;
+	cursor: pointer;
+}*/
+.btn1:hover
+{
+	background-color:#8e8282;
+}
+.btn2:hover
+{
+	background-color:#8e8282;
+}
+.btn3:hover
+{
+	background-color:#8e8282;
+}
+/*.btn4:hover
+{
+	background-color:#8e8282;
+}*/
+.img1
+{
+	background-image:url("images/img (1).jpg");
+	background-repeat: no-repeat;
+	 background-position: center;
+	 width: 700px;
+    height: 400px;
+	position: absolute;
+}
+.img2
+{
+	background-image:url("images/img (2).jpg");
+	background-repeat: no-repeat;
+	 background-position: center;
+	 width: 700px;
+    height: 400px;
+	position: absolute;
+}
+.img3
+{
+	background-image:url("images/img (3).jpg");
+	background-repeat: no-repeat;
+	 background-position: center;
+	 width: 700px;
+    height: 400px;
+	position: absolute;
+}
+
+#imzg4
+{
+	background-image:url("images/img (4).jpg");
+	background-repeat: no-repeat;
+	 background-position: center;
+	 width: 700px;
+    height: 400px;
+	position: absolute;
+}
+.castcard {
+    width: 400px;
+    background-color: white;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4), 0 20px 40px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    border: 1px solid red;
+    background-color: rgb(0,0,0,0.85);
+    color: red;
+    font-size: 30px;
+    position: absolute;
+    /* height: 10px; */
+    border-radius: 14px;
+	padding: 10px;
+}
+.card1
+{
+    position: absolute;
+    left: 2%;
+    top: 50%;
+}
+.card2
+{
+    position: absolute;
+    left: 35%;
+    top: 54%;
+}
+.card3
+{
+    position: absolute;
+    left: 68%;
+    top: 54%;
+}
+.card4
+{
+    position: absolute;
+    left: 35%;
+    top: 75%;
+}
+.card5
+{
+    position: absolute;
+    left: 2%;
+    top: 26%;
+}
+.card6
+{
+    position: absolute;
+    left: 68%;
+    top: 26%;
+}
+.card7
+{
+    position: absolute;
+    left: 35%;
+    top: 26%;
+}
+
+.castinfo {
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 50%;
+}

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<title>game of throne </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="game_of_throne.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+	<!-- Font Awsome Icons-->
+	<script src="https://kit.fontawesome.com/a1fdd42e8e.js" crossorigin="anonymous"></script>
+	<!-- Preloader -->
+	<link rel="stylesheet" type="text/css" href="preLoader/style.css">
+	<script src="preLoader/loader.js"></script>
+	<!-- Preloader -->
+	<!-- navbar And Footer -->
+	<link rel="stylesheet" type="text/css" href="navBar.css">
+	<link rel="stylesheet" type="text/css" href="footerSec.css">
+	<link rel="stylesheet" type="text/css" href="scrollBar.css">
+	<!-- navbar And Footer -->
+
+<script>
+	
+ $(document).ready(function()
+ {
+    $("#storytxt").show();
+	$("#linkssec").hide();
+	$("#photossec").hide();
+	$("#videosec").hide();
+	$("#castsec").hide();
+	$("#scrolltop").click(function()
+	{
+    $("html,body").animate({scrollTop:0},"slow");
+    });
+	$("#story").click(function()
+	{
+    $("#storytxt").show();
+	$("#linkssec").hide();
+	$("#photossec").hide();
+	$("#videosec").hide();
+	$("#castsec").hide();
+	$(".details").css("height", "679px");
+	$(".footer").css("bottom", "-140%");
+    });
+    $("#links").click(function()
+    {
+    $("#storytxt").hide();
+	$("#linkssec").show();
+	$("#photossec").hide();
+	$("#videosec").hide();
+	$("#castsec").hide();
+	$(".details").css("height", "505px");
+	$(".footer").css("bottom", "-120%");
+    });
+	$("#photos").click(function()
+    {
+    $("#storytxt").hide();
+	$("#linkssec").hide();
+	$("#photossec").show();
+	$("#videosec").hide();
+	$("#castsec").hide();
+	$(".details").css("height", "1800px");
+	$(".footer").css("bottom", "-300%");
+    });
+	$("#trailer").click(function()
+    {
+    $("#storytxt").hide();
+	$("#linkssec").hide();
+	$("#photossec").hide();
+	$("#videosec").show();
+	$("#castsec").hide();
+	$(".details").css("height", "814px");
+	$(".footer").css("bottom", "-160%");
+    });
+	$("#cast").click(function()
+	{
+    $("#storytxt").hide();
+	$("#linkssec").hide();
+	$("#photossec").hide();
+	$("#videosec").hide();
+	$("#castsec").show();
+	$(".details").css("height", "1314");
+	$(".footer").css("bottom", "-240%");
+    });
+});
+ 
+</script>
+</head>
+
+<body class="darkMode">
+		<div class="loader">
+			<svg>
+				<defs>
+				<filter id="goo">
+				<feGaussianBlur stdDeviation="7" />
+				<feColorMatrix values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" />
+				</filter>
+				</defs>
+			</svg>
+			<div class="torpedoLogo">
+				<svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200.000000 200.000000" preserveAspectRatio="xMidYMid meet">
+					<g transform="translate(0.000000,200.000000) scale(0.100000,-0.100000)" stroke="none">
+					<path d="M733 1849 c-17 -6 -23 -16 -23 -36 0 -22 16 -44 65 -93 66 -65 75
+							-80 52 -80 -8 0 -36 -12 -63 -27 -46 -25 -59 -27 -224 -33 -167 -5 -177 -7
+							-233 -34 -71 -36 -140 -108 -175 -184 l-27 -57 0 -395 c0 -383 1 -396 21 -440
+							53 -111 136 -184 247 -215 53 -15 57 -19 57 -46 0 -40 32 -69 75 -69 44 0 75
+							29 75 70 l0 30 405 0 405 0 0 -23 c0 -35 30 -57 78 -57 45 0 72 20 72 53 0 19
+							10 24 71 39 120 29 210 102 261 214 23 48 23 55 23 444 l0 395 -29 62 c-34 73
+							-113 153 -183 186 -44 20 -66 22 -258 25 l-210 3 -56 29 c-31 17 -64 30 -73
+							30 -26 0 -19 13 45 75 73 72 83 89 70 114 -20 37 -49 32 -109 -19 -31 -26 -75
+							-66 -97 -89 l-39 -41 -86 84 c-92 91 -104 98 -137 85z m659 -419 c63 -18 129
+							-70 162 -130 l31 -55 0 -335 0 -335 -30 -54 c-34 -62 -99 -115 -162 -130 -26
+							-7 -206 -11 -486 -11 -508 0 -508 0 -587 80 -77 76 -80 95 -80 450 0 356 3
+							374 80 451 78 78 73 77 585 78 278 1 464 -3 487 -9z m388 -330 c24 -24 25 -47
+							3 -72 -20 -22 -51 -23 -75 -1 -25 22 -23 59 4 77 30 21 44 20 68 -4z m12 -166
+							c8 -17 8 -31 0 -49 -15 -33 -75 -36 -92 -4 -16 29 -8 62 18 75 31 16 61 7 74
+							-22z m-7 -144 c23 -25 13 -67 -20 -82 -52 -23 -100 46 -59 86 21 22 57 20 79
+							-4z" />
+					<path class="torpedoLogoCont" d="M448 1356 c-77 -28 -115 -68 -140 -149 -9 -28 -9 -40 0 -49 9 -9 31
+								6 90 63 43 41 93 85 112 100 56 42 19 64 -62 35z" />
+					<path class="torpedoLogoCont" d="M752 1188 c-9 -9 -12 -76 -12 -240 0 -214 1 -228 19 -238 11 -5 28
+									-7 39 -2 49 19 365 209 373 225 6 10 7 26 4 37 -7 22 -361 230 -391 230 -11 0
+									-25 -5 -32 -12z" />
+				</g>
+				</svg>
+		<div class="torpedoWord">
+			<h1>TORPEDO<span>LAND</span></h1>
+			</div>
+			</div>
+			<div class="container goo1">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+		<!-- NAV BAR -->
+		<nav class="nav">
+			<div class="cont">
+				<div class="logo">
+					<a class="svg" href="#">
+						<!-- LOGO -->
+						<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="200.000000pt" height="200.000000pt" viewBox="0 0 200.000000 200.000000" preserveAspectRatio="xMidYMid meet">
+							<g transform="translate(0.000000,200.000000) scale(0.100000,-0.100000)" stroke="none">
+								<path d="M733 1849 c-17 -6 -23 -16 -23 -36 0 -22 16 -44 65 -93 66 -65 75
+												-80 52 -80 -8 0 -36 -12 -63 -27 -46 -25 -59 -27 -224 -33 -167 -5 -177 -7
+												-233 -34 -71 -36 -140 -108 -175 -184 l-27 -57 0 -395 c0 -383 1 -396 21 -440
+												53 -111 136 -184 247 -215 53 -15 57 -19 57 -46 0 -40 32 -69 75 -69 44 0 75
+												29 75 70 l0 30 405 0 405 0 0 -23 c0 -35 30 -57 78 -57 45 0 72 20 72 53 0 19
+												10 24 71 39 120 29 210 102 261 214 23 48 23 55 23 444 l0 395 -29 62 c-34 73
+												-113 153 -183 186 -44 20 -66 22 -258 25 l-210 3 -56 29 c-31 17 -64 30 -73
+												30 -26 0 -19 13 45 75 73 72 83 89 70 114 -20 37 -49 32 -109 -19 -31 -26 -75
+												-66 -97 -89 l-39 -41 -86 84 c-92 91 -104 98 -137 85z m659 -419 c63 -18 129
+												-70 162 -130 l31 -55 0 -335 0 -335 -30 -54 c-34 -62 -99 -115 -162 -130 -26
+												-7 -206 -11 -486 -11 -508 0 -508 0 -587 80 -77 76 -80 95 -80 450 0 356 3
+												374 80 451 78 78 73 77 585 78 278 1 464 -3 487 -9z m388 -330 c24 -24 25 -47
+												3 -72 -20 -22 -51 -23 -75 -1 -25 22 -23 59 4 77 30 21 44 20 68 -4z m12 -166
+												c8 -17 8 -31 0 -49 -15 -33 -75 -36 -92 -4 -16 29 -8 62 18 75 31 16 61 7 74
+												-22z m-7 -144 c23 -25 13 -67 -20 -82 -52 -23 -100 46 -59 86 21 22 57 20 79
+												-4z" />
+									<path class="svgCont" d="M448 1356 c-77 -28 -115 -68 -140 -149 -9 -28 -9 -40 0 -49 9 -9 31
+													6 90 63 43 41 93 85 112 100 56 42 19 64 -62 35z" />
+									<path class="svgCont" d="M752 1188 c-9 -9 -12 -76 -12 -240 0 -214 1 -228 19 -238 11 -5 28
+														-7 39 -2 49 19 365 209 373 225 6 10 7 26 4 37 -7 22 -361 230 -391 230 -11 0
+														-25 -5 -32 -12z" />
+									</g>
+						</svg>
+					</a>
+				<a href="#">
+					<h1>TORPEDO<span>LAND</span></h1>
+				</a>
+				</div>
+				<div class="lists">
+					<ul>
+					<li><a href="#">HOME</a></li>
+					<li class="list">
+						<div class="selectList">
+						<a href="./Movies&Series/table.html">MOVIES&SERIES</a>
+					</li>
+					<li><a href="./About/about-us.html">ABOUT</a></li>
+					<li><a href="./Contact/contactPage.html">CONTACT</a></li>
+				</ul>
+				</div>
+				<div class="search">
+					<i class="fas fa-sliders-h icon" onclick="settingsBtn()"></i>
+					<a href="regSystem/registirationSystem.html"><i class="fas fa-user icon"></i></a>
+				</div>
+			</div>
+		</nav>
+		<nav class="mobile">
+			<div class="cont">
+				<div class="logo">
+					<a class="svg" href="#"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="200.000000pt" height="200.000000pt" viewBox="0 0 200.000000 200.000000" preserveAspectRatio="xMidYMid meet">
+											<g transform="translate(0.000000,200.000000) scale(0.100000,-0.100000)" stroke="none">
+												<path d="M733 1849 c-17 -6 -23 -16 -23 -36 0 -22 16 -44 65 -93 66 -65 75
+													-80 52 -80 -8 0 -36 -12 -63 -27 -46 -25 -59 -27 -224 -33 -167 -5 -177 -7
+													-233 -34 -71 -36 -140 -108 -175 -184 l-27 -57 0 -395 c0 -383 1 -396 21 -440
+													53 -111 136 -184 247 -215 53 -15 57 -19 57 -46 0 -40 32 -69 75 -69 44 0 75
+													29 75 70 l0 30 405 0 405 0 0 -23 c0 -35 30 -57 78 -57 45 0 72 20 72 53 0 19
+													10 24 71 39 120 29 210 102 261 214 23 48 23 55 23 444 l0 395 -29 62 c-34 73
+													-113 153 -183 186 -44 20 -66 22 -258 25 l-210 3 -56 29 c-31 17 -64 30 -73
+													30 -26 0 -19 13 45 75 73 72 83 89 70 114 -20 37 -49 32 -109 -19 -31 -26 -75
+													-66 -97 -89 l-39 -41 -86 84 c-92 91 -104 98 -137 85z m659 -419 c63 -18 129
+													-70 162 -130 l31 -55 0 -335 0 -335 -30 -54 c-34 -62 -99 -115 -162 -130 -26
+													-7 -206 -11 -486 -11 -508 0 -508 0 -587 80 -77 76 -80 95 -80 450 0 356 3
+													374 80 451 78 78 73 77 585 78 278 1 464 -3 487 -9z m388 -330 c24 -24 25 -47
+													3 -72 -20 -22 -51 -23 -75 -1 -25 22 -23 59 4 77 30 21 44 20 68 -4z m12 -166
+													c8 -17 8 -31 0 -49 -15 -33 -75 -36 -92 -4 -16 29 -8 62 18 75 31 16 61 7 74
+													-22z m-7 -144 c23 -25 13 -67 -20 -82 -52 -23 -100 46 -59 86 21 22 57 20 79
+													-4z" />
+													<path class="svgCont" d="M448 1356 c-77 -28 -115 -68 -140 -149 -9 -28 -9 -40 0 -49 9 -9 31
+														6 90 63 43 41 93 85 112 100 56 42 19 64 -62 35z" />
+														<path class="svgCont" d="M752 1188 c-9 -9 -12 -76 -12 -240 0 -214 1 -228 19 -238 11 -5 28
+															-7 39 -2 49 19 365 209 373 225 6 10 7 26 4 37 -7 22 -361 230 -391 230 -11 0
+															-25 -5 -32 -12z" />
+														</g>
+													</svg></a><a href="#">
+													<h1>TORPEDO<span>LAND</span></h1>
+												</a>
+				</div>
+				<div class="right-nav-mob">
+					<div class="hamb" onclick="openHamb()">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<a href="regSystem/registirationSystem.html"><i class="fas fa-user icon"></i></a>
+				</div>
+			</div>
+		</nav>
+		<!-- Mobile Settings -->
+		<div class="mobileShow">
+			<ul>
+				<li class="switcher">
+					<p>BackgroundMode:</p>
+					<div class="switch" onclick="switcher()">
+						<div class="circle"></div>
+					</div>
+				</li>
+				<li><a href="#">HOME</a></li>
+				<li><a href="./Movies&Series/table.html">MOVIES&SERIES</a></li>
+				<li><a href="./About/about-us.html">ABOUT</a></li>
+				<li><a href="./Contact/contactPage.html">CONTACT</a></li>
+			</ul>
+		</div>
+		<!-- PC Settings -->
+		<div class="sittings">
+			<div class="cont">
+				<h1>Settings</h1>
+				<div class="mode">
+					<h2>Select The Background Mode:</h2>
+					<div class="switch" onclick="switcher()">
+						<div class="circle"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- NAV BAR -->
+
+
+
+
+
+
+
+	<button id="scrolltop">
+	<i class="material-icons">arrow_upward</i>
+	</button>
+	<button id="searchbtn">
+	<a href="search\search.html"><i class="material-icons">search</i></a>
+	</button>
+	
+	<div class="maininfo">
+	<div class="main_name">
+	<p class="mainname">game of thrones</p>
+	</div>
+	<div class="cover" >
+	<img src="images\game_of_throne\cover\439871.jpg" width="500" height="430">
+	</div>
+	<div class="info">
+	<p><span class="material-icons" style="color:red;">grade</span> Rating: 9.3</br>
+	<span class="material-icons" style="color:red;">date_range</span> Release Date: 2011</br>
+	<span class="material-icons" style="color:red;">view_column</span> Seasons: 8</br>
+	<span class="material-icons" style="color:red;">ondemand_video</span> Episodes: 73</br>
+	<span class="material-icons" style="color:red;">info</span> Genera: Action, Adventure, Drama   </br></p>
+	</div>
+	</div>
+	
+	<!--details section-->
+	
+	<div class="details">
+	
+	<div class="menu" >
+	<ul class="ul">
+	  <li><button id="story">story</button></li>
+	  <li> <button id="links">links</button></li>
+	  <li><button id="photos">photos</button></li>
+	  <li><button id="cast">cast</button></li>
+	  <li><button id="trailer">trailer</button></li>
+	</ul>
+	</div>
+	<div class="storytxt1" id="storytxt">
+	<p>Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss for HBO. It is an adaptation of A Song of Ice and Fire, George R. R. Martin's series of fantasy novels, the first of which is A Game of Thrones. The show was both produced and filmed in Belfast and elsewhere in the United Kingdom. Filming locations also included Canada, Croatia, Iceland, Malta, Morocco, and Spain.[4] The series premiered on HBO in the United States on April 17, 2011, and concluded on May 19, 2019, with 73 episodes broadcast over eight seasons. Set on the fictional continents of Westeros and Essos, Game of Thrones has several plots and a large ensemble cast and follows several story arcs. One arc is about the Iron Throne of the Seven Kingdoms and follows a web of alliances and conflicts among the noble dynasties either vying to claim the throne or fighting for independence from it. Another focuses on the last descendant of the realm's deposed ruling dynasty, who has been exiled and is plotting a return to the throne, while another story arc follows the Night's Watch, a brotherhood defending the realm against the fierce peoples and legendary creatures of the North. Game of Thrones attracted a record viewership on HBO and has a broad, active, and international fan base. The series was acclaimed by critics for its acting, complex characters, story, scope, and production values, although its frequent use of nudity and violence (including sexual violence) was criticized; the final season received further criticism for its condensed story and creative decisions, with many considering it a disappointing conclusion. The series received 58 Primetime Emmy Awards, the most by a drama series, including Outstanding Drama Series in 2015, 2016, 2018, 2019. Its other awards and nominations include three Hugo Awards for Best Dramatic Presentation (2012–2014), a 2011 Peabody Award, and five nominations for the Golden Globe Award for Best Television Series – Drama (2012 and 2015–2018). In 2019, the show's final season established a new record for most Emmy nominations received in the same year by any regular series with 32, breaking the 25-year-long record of 26 nominations established by NYPD Blue in 1994; it also established Game of Thrones as the drama series with the most overall Emmy nominations, with a total of 161.[5]</p>
+		
+	</div>
+	<div class="links1" id="linkssec">
+
+			<h1 class="watch">Watch & Download </h1>
+
+
+
+
+			<!-- LINKS PARTS -->
+			<div class="buttons">
+				<a class="link1" href="https://noon.egybest.pw/series/game-of-thrones-2011/?ref=search-p1" target="_blank">egybest</a>
+				<p></br></p>
+				<a class="link2" href="https://www.akoam.net/36290/%D9%85%D8%B3%D9%84%D8%B3%D9%84-%D9%84%D8%B9%D8%A8%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D9%88%D8%B4-Game-of-Thrones-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%85%D8%AA%D8%B1%D8%AC%D9%85" target="_blank">akoam</a>
+				<p></br></p>
+				<a class="link3" href="http://w.cima4u.tv/?s=Game+of+Thrones" target="_blank">cima4u</a>
+				<p></br></p>
+				<a class="link4" href="https://w.cimaclub.com/game-of-thrones-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-9-%d9%85%d9%86-%d8%a7%d9%84%d9%85%d9%88%d8%b3%d9%85-%d8%a7%d9%84%d8%b3%d8%a7%d8%af%d8%b3-%d9%85%d8%aa%d8%b1%d8%ac%d9%85%d8%a9" target="_blank">cimaclub</a>
+			</div>
+		</div>
+	<div class="photos1" id="photossec">
+	
+	<img src="images\game_of_throne\inside\1.jpg" width="500" height="400">
+	<img src="images\game_of_throne\inside\2.jpg" width="500" height="400">
+	<img src="images\game_of_throne\inside\3.jpg" width="500" height="400">
+	<img src="images\game_of_throne\inside\4.jpg" width="500" height="400">
+	</div>
+	<div class="video" id="videosec">
+	<iframe src="https://www.youtube.com/embed/rlR4PJn8b8I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<div class="cast" id="castsec">
+	<div class="card1">
+	<div class="castcard">
+  <img class="img1" src="images\game_of_throne\cast\1.jpg" alt="person" style="width:100%" >
+  <div class="castinfo">
+  <p>kit harintgon</br>(jon snow)</p>
+  </div>
+    </div>
+	</div>
+	<div class="card2">
+	<div class="castcard">
+  <img class="img2" src="images\game_of_throne\cast\2.jpg" alt="person" style="width:100%">
+  <div class="castinfo">
+  <p>emilia clark </br>(daenerys)</p>
+  </div>
+    </div>
+	</div>
+	<div class="card3">
+	<div class="castcard">
+  <img class="img3" src="images\game_of_throne\cast\3.jpg" alt="person" style="width:100%">
+  <div class="castinfo">
+  <p>maisie williams</br>(arya stark)</p>
+  </div>
+    </div>
+	</div>
+	<div class="card4">
+	<div class="castcard">
+  <img class="img4" src="images\game_of_throne\cast\4.jpg" alt="person" style="width:100%">
+  <div class="castinfo">
+  <p>peter dinklage</br>(tyrion)</p>
+  </div>
+    </div>
+	</div>
+	</div>
+	</div>
+	
+
+
+
+
+		<!-- Footer -->
+		<div class="footer">
+		<div class="cont">
+			<div class="up">
+				<div class="logo">
+					<a class="svg" href="#">
+						<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="200.000000pt" height="200.000000pt" viewBox="0 0 200.000000 200.000000" preserveAspectRatio="xMidYMid meet">
+													<g transform="translate(0.000000,200.000000) scale(0.100000,-0.100000)" stroke="none">
+														<path d="M733 1849 c-17 -6 -23 -16 -23 -36 0 -22 16 -44 65 -93 66 -65 75
+															-80 52 -80 -8 0 -36 -12 -63 -27 -46 -25 -59 -27 -224 -33 -167 -5 -177 -7
+															-233 -34 -71 -36 -140 -108 -175 -184 l-27 -57 0 -395 c0 -383 1 -396 21 -440
+															53 -111 136 -184 247 -215 53 -15 57 -19 57 -46 0 -40 32 -69 75 -69 44 0 75
+															29 75 70 l0 30 405 0 405 0 0 -23 c0 -35 30 -57 78 -57 45 0 72 20 72 53 0 19
+															10 24 71 39 120 29 210 102 261 214 23 48 23 55 23 444 l0 395 -29 62 c-34 73
+															-113 153 -183 186 -44 20 -66 22 -258 25 l-210 3 -56 29 c-31 17 -64 30 -73
+															30 -26 0 -19 13 45 75 73 72 83 89 70 114 -20 37 -49 32 -109 -19 -31 -26 -75
+															-66 -97 -89 l-39 -41 -86 84 c-92 91 -104 98 -137 85z m659 -419 c63 -18 129
+															-70 162 -130 l31 -55 0 -335 0 -335 -30 -54 c-34 -62 -99 -115 -162 -130 -26
+															-7 -206 -11 -486 -11 -508 0 -508 0 -587 80 -77 76 -80 95 -80 450 0 356 3
+															374 80 451 78 78 73 77 585 78 278 1 464 -3 487 -9z m388 -330 c24 -24 25 -47
+															3 -72 -20 -22 -51 -23 -75 -1 -25 22 -23 59 4 77 30 21 44 20 68 -4z m12 -166
+															c8 -17 8 -31 0 -49 -15 -33 -75 -36 -92 -4 -16 29 -8 62 18 75 31 16 61 7 74
+															-22z m-7 -144 c23 -25 13 -67 -20 -82 -52 -23 -100 46 -59 86 21 22 57 20 79
+															-4z" />
+															<path class="svgCont" d="M448 1356 c-77 -28 -115 -68 -140 -149 -9 -28 -9 -40 0 -49 9 -9 31
+																6 90 63 43 41 93 85 112 100 56 42 19 64 -62 35z" />
+																<path class="svgCont" d="M752 1188 c-9 -9 -12 -76 -12 -240 0 -214 1 -228 19 -238 11 -5 28
+																	-7 39 -2 49 19 365 209 373 225 6 10 7 26 4 37 -7 22 -361 230 -391 230 -11 0
+																	-25 -5 -32 -12z" />
+																</g>
+						</svg>
+					</a><a href="#">
+					<h1>TORPEDO<span>LAND</span></h1>
+					</a>
+				</div>
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">MOVIES</a></li>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="./Contact/contactPage.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<div class="down">
+				<div class="left">
+					<p>© Copyright 2020 <a href="#">TORPEDOLAND</a> Rights Reserved</p>
+				</div>
+				<div class="right">
+					<a href="#"><i class="fab fa-twitter icon"></i></a>
+					<a href="#"><i class="fab fa-facebook-f icon"></i></a>
+					<a href="#"><i class="fab fa-google-plus-g icon"></i></a>
+					<a href="#"><i class="fab fa-instagram icon"></i></a>
+					<a href="#"><i class="fab fa-github icon"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Nav bar Script -->
+    <script src="script.js"></script>
+
+</body>
